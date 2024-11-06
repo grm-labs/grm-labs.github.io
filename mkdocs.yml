@@ -1,0 +1,48 @@
+site_name: GRM-LABS
+site_url: https://grm-labs.github.io/
+dev_addr: "127.0.0.1:8001"
+theme:
+  name: material
+  language: es
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - navigation.indexes
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: light
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: dark
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+# Plugins
+plugins:
+  - search
+  - blog:
+      pagination_per_page: 2
+  - tags:
+      tags_file: blog/tags.md
+  - social
+
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
+      - Etiquetas: blog/tags.md
+
+extra_css:
+  - stylesheets/extra.css
