@@ -1,48 +1,52 @@
 site_name: GRM-LABS
 site_url: https://grm-labs.github.io/
 dev_addr: "127.0.0.1:8001"
+copyright: >
+  Copyright &copy; 2024 Germán Ruiz
 theme:
   name: material
   language: es
   logo: assets/logo.png
   favicon: assets/logo.png
   features:
-    - navigation.indexes
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.tabs
+    - navigation.expand
+    - content.code.annotate
+    - search.share
+    - search.suggest
+    - content.tabs.link
+    - announce.dismiss
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
+    scheme: youtube
+  font:
+    text: Fira Sans
+    code: Ubuntu Mono
 
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: light
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/grm-labs
+      name: Github / GRM - Labs
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/gruizmudarra/
+      name: Linked In / Germán Ruiz
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/grm.labs
+      name: Instagram / GRM - Labs
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: dark
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+extra_css:
+  - stylesheets/extra.css
 
 # Plugins
 plugins:
-  - search
-  - blog:
-      pagination_per_page: 2
-  - tags:
-      tags_file: blog/tags.md
+  - material/search
+  - tags
   - social
 
 nav:
   - Home: index.md
-  - Blog:
-      - blog/index.md
-      - Etiquetas: blog/tags.md
-
-extra_css:
-  - stylesheets/extra.css
+  - Projects: blog/index.md
+  - About me: about.md
