@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://grm-labs.github.io/</loc>
+         <lastmod>2024-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://grm-labs.github.io/about/</loc>
+         <lastmod>2024-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://grm-labs.github.io/blog/</loc>
+         <lastmod>2024-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://grm-labs.github.io/blog/posts/post1/</loc>
+         <lastmod>2024-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://grm-labs.github.io/blog/posts/post2/</loc>
+         <lastmod>2024-11-07</lastmod>
+    </url>
+    <url>
+         <loc>https://grm-labs.github.io/blog/posts/post3/</loc>
+         <lastmod>2024-11-07</lastmod>
+    </url>
+</urlset>
